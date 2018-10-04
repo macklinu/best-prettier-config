@@ -1,7 +1,7 @@
 {
   "name": "best-prettier-config",
   "description": "The best prettier config in the world",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.json",
   "bin": "cli.js",
   "files": [
