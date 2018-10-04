@@ -1,0 +1,21 @@
+{
+  "name": "best-prettier-config",
+  "description": "The best prettier config in the world",
+  "version": "1.0.0",
+  "main": "index.json",
+  "bin": "cli.js",
+  "files": [
+    "index.json",
+    "cli.js"
+  ],
+  "author": "Mackie Underdown <macklinu@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/macklinu/best-prettier-config.git"
+  },
+  "homepage": "https://github.com/macklinu/best-prettier-config",
+  "devDependencies": {
+    "prettier": "^1.14.3"
+  }
+}
