@@ -4,12 +4,24 @@
 
 const fs = require('fs')
 const path = require('path')
-const config = require('.')
 
-const prettierConfigPath = path.resolve(process.cwd(), '.prettierrc')
-const jsonConfig = JSON.stringify(config, null, 2)
+const readStream = fs.createReadStream(path.resolve(__dirname, 'index.json'))
 
-fs.writeFile(prettierConfigPath, jsonConfig, 'utf8', err => {
-  if (err) throw err
-  console.log('😎 Enjoy the best .prettierrc file you have ever seen')
-})
+let writeStream
+
+readStream
+  .on('error', err => {
+    console.error(err.message)
+    process.exit(1)
+  })
+  .once('data', () => {
+    writeStream = fs.createWriteStream(
+      path.resolve(process.cwd(), '.prettierrc')
+    )
+  })
+  .on('data', chunk => {
+    writeStream.write(chunk)
+  })
+  .on('end', () => {
+    console.log('😎 Enjoy the best prettier config in the world')
+  })
