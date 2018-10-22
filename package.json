@@ -8,6 +8,9 @@
     "index.json",
     "cli.js"
   ],
+  "keywords": [
+    "prettier"
+  ],
   "author": "Mackie Underdown <macklinu@gmail.com>",
   "license": "MIT",
   "repository": {
