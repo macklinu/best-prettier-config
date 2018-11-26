@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/macklinu/best-prettier-config",
   "devDependencies": {
-    "prettier": "^1.14.3"
+    "prettier": "^1.15.2"
   }
 }
