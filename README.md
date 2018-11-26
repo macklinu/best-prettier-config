@@ -12,6 +12,7 @@ This will write a `.prettierrc` file with the following contents to your current
 
 ```json
 {
+  "jsxSingleQuote": true,
   "semi": false,
   "singleQuote": true,
   "trailingComma": "es5"
