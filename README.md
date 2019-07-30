@@ -1,6 +1,6 @@
 # best-prettier-config
 
-> The best [prettier][] config in the world
+> The best [prettier][] config in the world :earth_americas:
 
 I add this file to all my projects, so I made a CLI to make it easier to do so.
 
