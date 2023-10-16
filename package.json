@@ -3,7 +3,7 @@
   "description": "The best prettier config in the world",
   "version": "2.0.0",
   "bin": {
-    "best-prettier-config": "src/cli.ts"
+    "best-prettier-config": "./src/cli.ts"
   },
   "type": "module",
   "files": [
