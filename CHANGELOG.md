@@ -1,5 +1,11 @@
 # best-prettier-config
 
+## 2.0.1
+
+### Patch Changes
+
+- a20bbc8: Update bin path to fix bunx execution
+
 ## 2.0.0
 
 ### Major Changes
