@@ -3,12 +3,11 @@
   "description": "The best prettier config in the world",
   "version": "2.0.1",
   "bin": {
-    "best-prettier-config": "./src/cli.ts"
+    "best-prettier-config": "cli"
   },
   "type": "module",
   "files": [
-    ".prettierrc.json",
-    "src/"
+    "cli"
   ],
   "keywords": [
     "prettier"
@@ -25,7 +24,9 @@
   },
   "scripts": {
     "test": "bun test",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "build": "bun build src/cli.ts --compile --outfile cli",
+    "prepublishOnly": "bun run build"
   },
   "dependencies": {
     "minimist": "^1.2.8",
