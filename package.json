@@ -2,7 +2,9 @@
   "name": "best-prettier-config",
   "description": "The best prettier config in the world",
   "version": "2.0.0",
-  "bin": "src/cli.ts",
+  "bin": {
+    "best-prettier-config": "src/cli.ts"
+  },
   "type": "module",
   "files": [
     ".prettierrc.json",
@@ -15,7 +17,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/macklinu/best-prettier-config.git"
+    "url": "git+https://github.com/macklinu/best-prettier-config.git"
   },
   "homepage": "https://github.com/macklinu/best-prettier-config",
   "scripts": {
