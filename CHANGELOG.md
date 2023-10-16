@@ -1,5 +1,11 @@
 # best-prettier-config
 
+## 2.0.2
+
+### Patch Changes
+
+- 3ef66ec: Generate CLI binary to fix bunx usage
+
 ## 2.0.1
 
 ### Patch Changes
