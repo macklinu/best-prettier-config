@@ -2,23 +2,39 @@
   "name": "best-prettier-config",
   "description": "The best prettier config in the world",
   "version": "1.1.0",
-  "main": "index.json",
-  "bin": "cli.js",
+  "bin": "src/cli.ts",
+  "type": "module",
   "files": [
-    "index.json",
-    "cli.js"
+    ".prettierrc.json",
+    "src/"
   ],
   "keywords": [
     "prettier"
   ],
-  "author": "Mackie Underdown <macklinu@gmail.com>",
+  "author": "Mackie Underdown <macklinu@users.noreply.github.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/macklinu/best-prettier-config.git"
   },
   "homepage": "https://github.com/macklinu/best-prettier-config",
+  "scripts": {
+    "test": "bun test",
+    "lint": "eslint src"
+  },
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "zod": "^3.22.4"
+  },
   "devDependencies": {
-    "prettier": "^1.15.2"
+    "@changesets/cli": "^2.26.2",
+    "@types/minimist": "^1.2.3",
+    "@types/node": "^20.8.6",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
+    "@typescript-eslint/parser": "^6.7.5",
+    "bun-types": "^1.0.6",
+    "eslint": "^8.51.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^3"
   }
 }
