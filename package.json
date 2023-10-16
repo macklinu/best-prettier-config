@@ -20,6 +20,9 @@
     "url": "git+https://github.com/macklinu/best-prettier-config.git"
   },
   "homepage": "https://github.com/macklinu/best-prettier-config",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "bun test",
     "lint": "eslint src"
