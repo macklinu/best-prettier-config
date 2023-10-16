@@ -2,11 +2,11 @@
   "name": "best-prettier-config",
   "description": "The best prettier config in the world",
   "version": "1.1.0",
-  "bin": "cli.ts",
+  "bin": "src/cli.ts",
   "type": "module",
   "files": [
     ".prettierrc.json",
-    "cli.ts"
+    "src/"
   ],
   "keywords": [
     "prettier"
