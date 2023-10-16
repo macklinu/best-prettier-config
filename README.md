@@ -5,10 +5,10 @@
 I add this file to all my projects, so I made a CLI to make it easier to do so.
 
 ```sh
-bunx best-prettier-config
+npx best-prettier-config
 ```
 
-> **Note:** As of v2, I use Bun to execute one-off scripts, so this module is only supported for usage with `bunx`. I try to keep APIs compatiable with Node and `npx` but it's not guaranteed.
+> **Note:** As of v2, I use Bun to execute one-off scripts, but `bunx best-prettier-config@latest` isn't always working. I will ultimately move to that once Bun becomes more stable, but `npx best-prettier-config@latest` still works.
 
 This will write a `.prettierrc` file with the following contents to your current working directory:
 
@@ -25,9 +25,9 @@ If you need to add a couple plugins, like working on an Astro project with Tailw
 
 ```sh
 # These are all the same
-bunx best-prettier-config --plugin prettier-plugin-astro --plugin prettier-plugin-tailwind
-bunx best-prettier-config --plugin astro --plugin tailwind
-bunx best-prettier-config -p astro -p tailwind
+npx best-prettier-config --plugin prettier-plugin-astro --plugin prettier-plugin-tailwind
+npx best-prettier-config --plugin astro --plugin tailwind
+npx best-prettier-config -p astro -p tailwind
 ```
 
 Example output:
